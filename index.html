@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>City Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="#destinatii">Destinații</a></li>
+                <li><a href="#planifica">Planifică</a></li>
+                <li><a href="#recomandari">Recomandări</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinatii">
+            <h2>Destinații Populare</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <h3>Paris</h3>
+                    <p><strong>Țara:</strong> Franța</p>
+                    <p>Orașul iubirii, renumit pentru Turnul Eiffel, Luvru și cafenelele șarmante.</p>
+                    <p><em>Durată recomandată: 4 zile</em></p>
+                </article>
+
+                <article class="card">
+                    <h3>Roma</h3>
+                    <p><strong>Țara:</strong> Italia</p>
+                    <p>Un muzeu în aer liber, cu o istorie bogată și preparate culinare de neuitat.</p>
+                    <p><em>Durată recomandată: 3 zile</em></p>
+                </article>
+
+                <article class="card featured">
+                    <h3>Kyoto</h3>
+                    <p><strong>Țara:</strong> Japonia</p>
+                    <p>Fosta capitală imperială, faimoasă pentru templele clasice și grădinile zen.</p>
+                    <p><em>Durată recomandată: 5 zile</em></p>
+                </article>
+
+                <article class="card">
+                    <h3>Lisabona</h3>
+                    <p><strong>Țara:</strong> Portugalia</p>
+                    <p>Orașul celor șapte coline, faimos pentru tramvaiele galbene și pastel de nata.</p>
+                    <p><em>Durată recomandată: 3 zile</em></p>
+                </article>
+
+                <article class="card">
+                    <h3>Reykjavik</h3>
+                    <p><strong>Țara:</strong> Islanda</p>
+                    <p>Poarta către aurore boreale, ghețari spectaculoși și izvoare termale.</p>
+                    <p><em>Durată recomandată: 6 zile</em></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="planifica">
+            <h2>Planifică excursia</h2>
+            <form action="#" method="GET">
+                <div class="form-group">
+                    <label for="nume">Nume</label>
+                    <input type="text" id="nume" name="nume" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destinatie">Destinație</label>
+                    <select id="destinatie" name="destinatie" required>
+                        <option value="">Alege...</option>
+                        <option value="paris">Paris</option>
+                        <option value="roma">Roma</option>
+                        <option value="kyoto">Kyoto</option>
+                        <option value="lisabona">Lisabona</option>
+                        <option value="reykjavik">Reykjavik</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="zile">Număr de zile</label>
+                    <input type="number" id="zile" name="zile" min="1" max="30" required>
+                </div>
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <section id="recomandari">
+            <h2>Recomandări și Sfaturi</h2>
+            <ul>
+                <li>Cumpără biletele pentru obiectivele majore online, cu câteva săptămâni înainte.</li>
+                <li>Folosește transportul în comun local (metrou sau tramvai) pentru a economisi bani și timp.</li>
+                <li>Încearcă întotdeauna mâncarea stradală locală din piețele recomandate, evitând zonele turistice aglomerate.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor: Nume Prenume &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
