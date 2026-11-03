@@ -58,10 +58,11 @@ async function loadOrase() {
     console.log('L2 Ex. 3 orașul utilizatorului 1:', user1.address.city)
 
     // Pentru a forța eroarea cerută (subpunctul c), poți decomenta linia de mai jos:
-    // await fetchUserById(999)
+    await fetchUserById(999)
   } catch (error) {
     console.error('L2 Ex. 3 nu am putut încărca datele:', error.message)
   }
 }
 
 loadOrase()
+import './index.css'
